@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("fin.jpg");
+    background-repeat: repeat;
+}
+
+h2 {
+    color: #ffffff;
+}
+h1 {
+    color: #FFFFFF;
+}

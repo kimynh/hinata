@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("hinpain.jpg");
+}
+
+.hinata {
+    margin-top: 50px;
+    margin-bottom: 50%;
+    width: 600px;
+    height: 500px;
+}
+#SuiteButton {
+    position: absolute;
+    margin-right: 10px;
+    /* Smooth movement */
+}
+
+
+h1 {
+    margin-bottom: 500px;
+    margin-right: 550px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.text {
+    font-family: 'Nunito';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 500px;
+    margin-left: -600px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}

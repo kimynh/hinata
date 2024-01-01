@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" container = "width=device-width",
+        initial-scale="1.0">
+        <link rel="stylesheet" href="./principal.css">
+        <link rel="curseur" href ="curseur.JS">
+        <title>Bienvenue Nour</title>
+    </head> 
+        <script>
+            window.addEventListener('mousemove', function(e) {
+                var arr = [1, 0.9, 0.8, 0.5, 0.2];
+                arr.forEach(function(i)  {
+                    var x = (1 - i) * 75;
+                    var star = document.createElement('div');
+
+                    star.className = 'star';
+                    star.style.top = e.pageY + Math.round(Math.random() * x - x
+                    / 2) + 'px';
+                    star.style.left = e.pageX + Math.round(Math.random() * x - x / 2) + 'px';
+
+                    document.body.appendChild(star);
+
+                    window.setTimeout(function() {
+                        document.body.removeChild(star);
+                }, Math.round(Math.random() * i * 600));
+
+                });
+        
+            }, false);
+        </script>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Bienvenue</h1>
+                <h1 class = "header_text">Nour</h1>
+            </div>
+            <div class="gif_container">
+                <img src="principal.gif" />
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "continueButton" onclick="nextPage()">Continuer</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "princ.html";
+                    }
+                    
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
